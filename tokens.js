@@ -16,4 +16,21 @@ export default [
         },
         selfMute: true,
     },
+    import 'dotenv/config';
+export default [
+    {
+        channelId: "1210299716936409150",
+        serverId: "1011820688228765828",
+        token: process.env.TOKEN2,
+        selfDeaf: false,
+        autoReconnect: {
+            enabled: true,
+            delay: 5, // ثواني
+            maxRetries: 5,
+        },
+        presence: {
+            status: "idle",
+        },
+        selfMute: true,
+    },
 ];
